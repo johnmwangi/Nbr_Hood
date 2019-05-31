@@ -1,3 +1,5 @@
+{% extends 'base.html'%}
+{% block content %}
 <br>
 <br>
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -19,7 +21,7 @@
 
 	<div class="row" style="padding-top: 20px">
 		<div class="card-columns">
-			{%for hood in neighbourhoods%}
+			{% for hood in neighbourhoods %}
 			<div class="card mr-0" style="max-width:30rem;margin-top:5px;">
 
 				<img src="{{hood.hood_photo.url}}" class="card-img-top">
@@ -38,9 +40,7 @@
 				</div>
 
 			</div>
-			{%endfor%}
+			{% endfor %}
 		</div>
 	</div>
-
-
 	{%endblock%}
