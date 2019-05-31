@@ -199,7 +199,7 @@ def update_hood(request, id):
         return redirect('home')
     else:
         form = CreateHoodForm(instance=hood)
-    return render(request, 'hod/create_hood.html', {"form": form})
+    return render(request, 'hood/create_hood.html', {"form": form})
 
 
 @login_required(login_url='/accounts/login/')
