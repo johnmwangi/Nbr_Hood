@@ -9054,8 +9054,9 @@ button.bg-dark:focus {
     text-align: right !important;
   }
   .text-lg-center {
-    text-align: center !important;
-  }
+    text-align: center!important;
+    font-size: 250%;
+    font-family: 'Lobster', cursive;
 }
 
 @media (min-width: 1200px) {

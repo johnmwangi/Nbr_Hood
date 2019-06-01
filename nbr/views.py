@@ -181,7 +181,7 @@ def create_hood(request):
         return redirect('home')
     else:
         form = CreateHoodForm()
-    return render(request, 'hood/create_hood.html', {"form": form})
+    return render(request, 'hoods/create_hood.html', {"form": form})
 
 
 @login_required(login_url='/accounts/login/')
