@@ -9289,3 +9289,7 @@ body {
   font-size: 8px;
   line-height: 8px;
 }
+.newdata{
+    text-align: center;
+    font-size: 250%;
+    font-family: 'Lobster', cursive;
