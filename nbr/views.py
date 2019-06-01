@@ -26,7 +26,7 @@ def home(request):
             businesses = Business.objects.filter(
                 hood=request.user.join.hood_id.id)
 
-            return render(request, 'hood/hood.html', {"hood": hood, "businesses": businesses, "posts": posts})
+            return render(request, 'hoods/hood.html', {"hood": hood, "businesses": businesses, "posts": posts})
         else:
             neighbourhoods = Hood.objects.all()
             return render(request, 'index.html', {"neighbourhoods": neighbourhoods})
