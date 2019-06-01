@@ -7,15 +7,15 @@
 					{% include 'message/message.html' %}
 			</div>
 <div class="container">
-	<h4>Welcome to Neighbourhoods, begin by joining a hood. If your hood doesn't exist, create one <a href="{% url 'create_hood' %}">here</a></h4>
-
+	<h4>Welcome to Neighbourhoods, begin by joining a hood. If your hood doesn't exist, create one <a style="color:green;" href="{% url 'create_hood' %}">here</a></h4>
+</div>
 	<form class="" action="{% url 'search' %}">
 		<div class="form-group">
 			<input type="text" class="form-control" placeholder="Search Your Hood By ID" name="search">
 
 		</div>
 
-		<button type="submit" class="btn btn-default">Submit</button>
+		<button type="submit" class="btn btn-secondary">Submit</button>
 
 	</form>
 
