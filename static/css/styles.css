@@ -1,0 +1,13 @@
+body{
+  background-image: url('/static/img/black.jpg');
+  z-index: 0;
+  background-color: black;
+  background-blend-mode: lighten;
+}
+.navbar{
+
+  font-family: 'Abel', sans-serif;
+  font-size: 19px;
+   /* background-image: url('/static/img/liverpool.jpg');  */
+  background-repeat: repeat-x;
+}
