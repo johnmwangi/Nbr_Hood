@@ -17,12 +17,12 @@
   <br>
   <div class="row">
     <div class="col-3">
-      <a class="btn btn-sm btn-danger" href="{% url 'exitHood' hood.id %}" style="margin:10px">Leave Neighbourhood</a>
+      <a class="btn btn-sm btn-secondary" href="{% url 'exitHood' hood.id %}" style="margin:10px">Leave Neighbourhoods</a>
       <br>
-      <a class="btn btn-sm btn-primary" href="{% url 'create_post' %}">Create Post</a>
-      <a class="btn btn-sm btn-secondary" href="{% url 'add_business' %}">Add Business</a>
-      <h4>Police and Healthcare</h4>
-      <p><small>0712345678</small></p>
+      <a class="btn btn-sm btn-success" href="{% url 'create_post' %}">Create Post</a>
+      <a class="btn btn-sm btn-success" href="{% url 'add_business' %}">Add Business</a>
+      <h4><i>Police and Healthcare</i></h4>
+      <p><small>999 & 0768684357</small></p>
     </div>
 
     <div class="col-5">
@@ -42,7 +42,7 @@
           <hr>
         </div>
 
-        <a href="{% url 'delete_post' post.id %}" class="btn btn-sm btn-danger">Delete</a>
+        <a href="{% url 'delete_post' post.id %}" class="btn btn-sm btn-secondary">Delete</a>
         <hr>
 
       </div>
@@ -77,7 +77,7 @@
     <div>
       {% else %}
       <p>No Biz</p>
-      <a class="btn btn-sm btn-secondary" href="{% url 'add_business' %}">Add Business</a>
+      <a class="btn btn-sm btn-success" href="{% url 'add_business' %}">Add Business</a>
       {% endif %}
     </div>
   </div>
