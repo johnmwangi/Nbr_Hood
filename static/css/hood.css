@@ -1,3 +1,6 @@
+@media (min-width: 576px) {
+ .modal-dialog { max-width: none; }
+}
 
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
 :root {
