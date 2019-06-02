@@ -10,7 +10,7 @@
 </div>
 <div class="container-fluid">
   <header>
-    <h1 class="text-center" style="font-weight:bold">{{hood.hood_name}}</h1>
+    <h1 class="text-center" style="font-weight:bold">{{hood.hoods_name}}</h1>
     <h5 class="text-center"><small>{{hood.location}}</small></h5>
   </header>
   <hr>
@@ -26,7 +26,7 @@
     </div>
 
     <div class="col-5">
-      <h4>{{hood.hood_name}} posts</h4>
+      <h4>{{hood.hoods_name}} posts</h4>
       <hr>
       {%if posts%}
       {% for post in posts %}
@@ -42,7 +42,7 @@
           <hr>
         </div>
 
-        <a href="{% url 'delete_post' post.id %}" class="btn btn-sm btn-secondary">Delete</a>
+        <a href="{% url 'delete_post' post.id %}" class="btn btn-sm btn-success">Delete</a>
         <hr>
 
       </div>
@@ -50,7 +50,7 @@
     <div>
       {% else %}
       <p>No Posts yet.</p>
-      <a class="btn btn-sm btn-secondary" href="{% url 'create_post' %}">Create Post</a>
+      <a class="btn btn-sm btn-success" href="{% url 'create_post' %}">Create Post</a>
       {% endif %}
     </div>
 

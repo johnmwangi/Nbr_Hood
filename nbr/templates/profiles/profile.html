@@ -1,4 +1,4 @@
-{%extends 'everything/base.html'%}
+{%extends 'base.html'%}
 {% block content %}
 {{ block.super}}
 {% load bootstrap4 %}
@@ -24,11 +24,11 @@
               <a class="btn btn-edit" href="">Edit Profile</a>
             </li> -->
             <li class="list-inline-item">
-              <a data-toggle="modal" data-target="#edit" href=""><i class="far fa-edit"></i>Edit Profile</a>
+              <a style="color:green;" data-toggle="modal" data-target="#edit" href=""><i class="far fa-edit" ></i>Edit Profile</a>
             </li>
             {% else %}
             <li class="list-inline-item">
-              <a href="#" class="btn btn-primary"></a>
+              <a href="#" class="btn btn-success"></a>
             </li>
             {% endif %}
           </ul>
@@ -43,7 +43,7 @@
           </ul>
           <p class="font3">{{profile.bio}}</p>
           {% if profile.user == user %}
-          <p><a href="{% url 'create_hood' %}">Create Hood</a></p>
+          <p><a style="color:green;" href="{% url 'create_hood' %}">Create Hood</a></p>
           {% endif %}
         </div>
       </div>
@@ -89,9 +89,9 @@
     <div class="modal-content">
       <div class="modal-body">
         <ul class="list-group">
-          <li class="list-group-item text-center"><a href="{% url 'edit_profile' %}">Edit Profile</a></li>
-          <li class="list-group-item text-center"><a href="/logout/">Log Out</a></li>
-          <li class="list-group-item text-center"><a data-dismiss="modal">Cancel</a></li>
+          <li class="list-group-item text-center"><a style="color:green;" href="{% url 'edit_profile' %}">Edit Profile</a></li>
+          <li class="list-group-item text-center"><a style="color:green;" href="/logout/">Log Out</a></li>
+          <li class="list-group-item text-center"><a style="color:green;" data-dismiss="modal">Cancel</a></li>
         </ul>
       </div>
     </div>
