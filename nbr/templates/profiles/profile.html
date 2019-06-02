@@ -24,7 +24,7 @@
               <a class="btn btn-edit" href="">Edit Profile</a>
             </li> -->
             <li class="list-inline-item">
-              <a style="color:green;" data-toggle="modal" data-target="#edit" href=""><i class="far fa-edit" ></i>Edit Profile</a>
+              <a style="color:white;" data-toggle="modal" data-target="#edit" href=""><i class="far fa-edit" ></i>Edit Profile</a>
             </li>
             {% else %}
             <li class="list-inline-item">
@@ -35,15 +35,15 @@
 
           <ul class="list-inline">
             <li class="list-inline-item">
-              <span class="font-weight-bold">{{hoods|length}}</span> <font color="white">Hoods</font>
+              <span class="font-weight-bold">{{hoods|length}}</span> <font color="white"  font size="6">Hoods</font>
             </li>
             <li class="list-inline-item">
-              <span class="font-weight-bold">{{business|length}}</span> <font color="white">Business</font>
+              <span class="font-weight-bold">{{business|length}}</span> <font color="white" font size="6" >Business</font>
             </li>
           </ul>
-          <font color="white"> class="font3">{{profile.bio}}</font>
+          <font color="white">{{profile.bio}}</font>
           {% if profile.user == user %}
-          <p><a style="color:green;" href="{% url 'create_hood' %}">Create Hood</a></p>
+         <font size="6"><a style="color:white;" href="{% url 'create_hood' %}">Create Hood</a></font>
           {% endif %}
         </div>
       </div>
@@ -55,7 +55,7 @@
 
       {% for hood in hoods %}
       <div class="col-md-4">
-        <font color="white">Hoods</font>
+        <font color="white" font size="6">Hoods</font>
         <img src="{{hood.hood_photo.url}}" alt="Image" style="height:300px;width:300px;">
         <p>{{hood.hood_name}}</p>
         <a href="{% url 'update_hood' hood.id %}" class="btn btn-sm btn-success">Update Your Hood</a>
@@ -64,17 +64,17 @@
       </div>
       {% empty %}
       <div>
-        <font color="white">Profile has no hoods</font>
+        <font color="white"  font size="6">Profile has no hoods</font>
       </div>
       {% endfor %}
       <div class="col-4">
-        <font color="white">Business</font>
+        <font color="white"  font size="6">Business</font>
   {% for biz in business %}
   <img src="{{biz.b_photo.url}}" alt="Image" style="height:300px;width:300px;">
   <p>{{biz.b_name}}</p>
   {% empty %}
   <div>
-    <font color="white">Profile has no business</font>
+    <font color="white" font size="6" >Profile has no business</font>
   </div>
   {% endfor %}
 
