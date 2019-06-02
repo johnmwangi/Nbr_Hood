@@ -9274,7 +9274,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   -webkit-font-smoothing: antialiased;
-  
+
 h4{
   font-family: 'Abel', sans-serif;
   text-color: white;
@@ -9292,4 +9292,9 @@ navbar {
    /* background-image: url('/static/img/liverpool.jpg');  */
   background-repeat: repeat-x;
 
+}
+
+.john{
+  font-family: 'Abel', sans-serif;
+  text-color: white;
 }
