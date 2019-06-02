@@ -41,7 +41,7 @@
               <span class="font-weight-bold">{{business|length}}</span> <font color="white">Business</font>
             </li>
           </ul>
-          <p class="font3">{{profile.bio}}</p>
+          <font color="white"> class="font3">{{profile.bio}}</font>
           {% if profile.user == user %}
           <p><a style="color:green;" href="{% url 'create_hood' %}">Create Hood</a></p>
           {% endif %}
@@ -68,7 +68,7 @@
       </div>
       {% endfor %}
       <div class="col-4">
-        <h4>Business</h4>
+        <font color="white">Business</font>
   {% for biz in business %}
   <img src="{{biz.b_photo.url}}" alt="Image" style="height:300px;width:300px;">
   <p>{{biz.b_name}}</p>

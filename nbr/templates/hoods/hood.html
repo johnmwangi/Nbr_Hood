@@ -17,12 +17,13 @@
   <br>
   <div class="row">
     <div class="col-3">
-      <a class="btn btn-sm btn-secondary" href="{% url 'exitHood' hood.id %}" style="margin:10px">Leave Neighbourhoods</a>
+
       <br>
-      <a class="btn btn-sm btn-success" href="{% url 'create_post' %}">Create Post</a>
-      <a class="btn btn-sm btn-success" href="{% url 'add_business' %}">Add Business</a>
-      <h4><i>Police and Healthcare</i></h4>
-      <p><small>999 & 0768684357</small></p>
+      <a class="btn btn-sm btn-success" href="{% url 'create_post' %}"><font color="white">Create Post</font></a>
+      <a class="btn btn-sm btn-success" href="{% url 'add_business' %}"><font color="white">Add Business</font></a>
+      <a class="btn btn-sm btn-secondary" href="{% url 'exitHood' hood.id %}" style="margin:10px">Leave Neighbourhoods</a>
+      <font color="white"><i>Police Services</i></font>
+      <font color="white"><small>reach out (999)</small></font>
     </div>
 
     <div class="col-5">
@@ -36,8 +37,8 @@
 
         </div>
         <div class="media-body">
-          <h4 class="media-heading">{{ post.title }}</h4>
-          <p class="media-content">{{ post.content }}</p>
+          <font color="white"> class="media-heading">{{ post.title }}</font>
+          <font color="white"> class="media-content">{{ post.content }}</font>
           <small>Resident: {{ post.posted_by }}</small>
           <hr>
         </div>
@@ -49,7 +50,7 @@
       {% endfor %}
     <div>
       {% else %}
-      <p>No Posts yet.</p>
+      <font color="white">No Posts yet.</font>
       <a class="btn btn-sm btn-success" href="{% url 'create_post' %}">Create Post</a>
       {% endif %}
     </div>
@@ -57,7 +58,7 @@
 
   </div>
   <div class="col-3">
-    <h4>Businesses</h4>
+    <font color="white">Businesses</font>
     <hr>
     {% if businesses %}
     {% for biz in businesses %}
@@ -69,14 +70,14 @@
       </div>
       <div class="media-body">
         <h4 class="media-heading" style="padding:10px; margin:5px">{{biz.b_name}}</h4>
-        <p>{{ biz.b_description }}</p>
-        <p>{{ biz.b_email}}</p>
+        <font color="white">{{ biz.b_description }}</font>
+        <font color="white">{{ biz.b_email}}</font>
       </div>
     </div>
     {% endfor %}
     <div>
       {% else %}
-      <p>No Biz</p>
+      <font color="white">No Biz</font>
       <a class="btn btn-sm btn-success" href="{% url 'add_business' %}">Add Business</a>
       {% endif %}
     </div>
