@@ -53,7 +53,7 @@ Admin should:
 * In your terminal:
 
         * git clone (https://nhoods.herokuapp.com/)
-        * cd Awards
+        * cd Hoods
 
 ## Running the Application
 * Creating the virtual environment
