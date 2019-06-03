@@ -51,7 +51,8 @@ Admin should:
 
 ### Cloning
 * In your terminal:
-        * git clone:https://nhoods.herokuapp.com/
+
+        * git clone (https://nhoods.herokuapp.com/)
         * cd Awards
 
 ## Running the Application
